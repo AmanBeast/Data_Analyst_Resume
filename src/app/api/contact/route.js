@@ -19,7 +19,7 @@ export async function POST(request) {
     // If Resend API Key is not set in development, simulate success with a notice
     if (!apiKey || apiKey === "re_your_api_key_here") {
       console.log("Mock Resend Email Dispatch (RESEND_API_KEY not configured):", {
-        to: "amanbishtab99@gmail.com",
+        to: "battleking2902@gmail.com",
         from: email,
         name,
         company,
