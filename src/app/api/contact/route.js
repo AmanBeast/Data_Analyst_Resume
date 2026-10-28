@@ -39,7 +39,7 @@ export async function POST(request) {
 
     const emailResponse = await resend.emails.send({
       from: "Portfolio Recruiter Inquiry <onboarding@resend.dev>",
-      to: ["amanbishtab99@gmail.com"],
+      to: ["battleking2902@gmail.com"],
       replyTo: email,
       subject: `[Data Analyst Portfolio] New Inquiry from ${name} (${company || "Recruiter"})`,
       text: `
