@@ -45,7 +45,20 @@ export default function ProjectCard({ project, onSelect, isSelected }) {
         {/* Title */}
         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors flex items-center justify-between">
           <span>{project.title}</span>
-          <ArrowUpRight className={`w-5 h-5 text-cyan-400 transition-transform ${isHovered ? "translate-x-0.5 -translate-y-0.5" : "opacity-40"}`} />
+          {project.githubUrl ? (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              title="View on GitHub"
+              className="p-1 rounded hover:bg-slate-800 text-cyan-400 transition"
+            >
+              <ArrowUpRight className={`w-5 h-5 transition-transform ${isHovered ? "translate-x-0.5 -translate-y-0.5" : "opacity-60"}`} />
+            </a>
+          ) : (
+            <ArrowUpRight className={`w-5 h-5 text-cyan-400 transition-transform ${isHovered ? "translate-x-0.5 -translate-y-0.5" : "opacity-40"}`} />
+          )}
         </h3>
 
         {/* Summary */}
@@ -121,6 +134,19 @@ export default function ProjectCard({ project, onSelect, isSelected }) {
               >
                 <Database className="w-3.5 h-3.5" /> Pipeline
               </button>
+
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="ml-auto text-xs px-2.5 py-1 rounded font-medium flex items-center gap-1 bg-slate-900 border border-slate-700 text-cyan-400 hover:text-cyan-300 hover:border-cyan-500 transition"
+                  title="View Source on GitHub"
+                >
+                  <ExternalLink className="w-3 h-3" /> GitHub Repo
+                </a>
+              )}
             </div>
 
             {/* Tab Contents */}

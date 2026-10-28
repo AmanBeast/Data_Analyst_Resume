@@ -32,10 +32,12 @@ export default function Home() {
 
   const domains = [
     "All",
+    "Machine Learning & AI",
+    "NLP & LLMs",
+    "Predictive Analytics & Web Deployment",
     "Healthcare & Operations",
     "Retail & E-Commerce",
     "Telecom & Subscription Analytics",
-    "Predictive Analytics & Web Deployment",
     "BFSI & Wealth Management",
     "People Analytics & HR"
   ];
@@ -55,13 +57,13 @@ export default function Home() {
             </div>
             <div>
               <span className="font-bold tracking-tight text-white text-base block">Aman Bisht</span>
-              <span className="text-[11px] text-cyan-400 font-medium block">Data Analyst & BI Engineer</span>
+              <span className="text-[11px] text-cyan-400 font-medium block">Data Analyst & Machine Learning Engineer</span>
             </div>
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300 font-medium">
             <a href="#projects" className="hover:text-cyan-400 transition">Projects & Visualizations</a>
-            <a href="#skills" className="hover:text-cyan-400 transition">Skills Matrix</a>
+            <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
             <a href="#experience" className="hover:text-cyan-400 transition">Experience</a>
             <a href="#contact" className="hover:text-cyan-400 transition">Contact Me</a>
           </nav>
@@ -105,20 +107,19 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300 text-xs font-semibold mb-6">
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Available for Data Analyst & BI Roles in MNCs</span>
+              <span>Available for Data Analyst, BI & Machine Learning Roles</span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
               Transforming Complex Data into{" "}
               <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
-                Executive Decisions
+                Executive Decisions & Intelligent ML
               </span>
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed mb-8">
-              Hi, I’m <strong>Aman Bisht</strong>. I build enterprise-grade data models, automated SQL ETL pipelines,
-              and dynamic Power BI & Tableau dashboards. Plus, I bridge the gap between analytics and deployment by building
-              interactive decision-support web applications using Streamlit, Python, and modern web frameworks.
+              Hi, I’m <strong>Aman Bisht</strong>. I build enterprise-grade data architectures, automated SQL ETL pipelines,
+              and dynamic Power BI & Tableau dashboards. Plus, I design and deploy production-ready <strong>Machine Learning models, NLP pipelines, and Generative AI (RAG)</strong> systems with interactive web applications using Streamlit, Python, and modern web frameworks.
             </p>
 
             {/* Quick Action Buttons */}
@@ -201,8 +202,8 @@ export default function Home() {
                 key={dom}
                 onClick={() => setSelectedDomain(dom)}
                 className={`px-4 py-2 rounded-xl whitespace-nowrap transition-all ${selectedDomain === dom
-                    ? "bg-cyan-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20"
-                    : "bg-slate-900/80 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800"
+                  ? "bg-cyan-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20"
+                  : "bg-slate-900/80 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800"
                   }`}
               >
                 {dom}
@@ -272,20 +273,20 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Card 3: Programming, ML & Web Apps */}
+            {/* Card 3: Programming, Machine Learning & Generative AI */}
             <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
               <div className="w-10 h-10 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 mb-4 border border-emerald-800">
                 <Cpu className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Python, ML & Web Apps</h3>
+              <h3 className="text-lg font-bold text-white mb-2">Machine Learning & GenAI</h3>
               <p className="text-xs text-slate-400 mb-4">
-                Full-stack analytics: from predictive modeling to live cloud application deployment.
+                Full-stack intelligent systems: from predictive modeling and NLP to production RAG deployment.
               </p>
               <ul className="space-y-2 text-xs text-slate-300">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Scikit-Learn (Classification, Regression, Pipelines)</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Streamlit Interactive Web Dashboards</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> React.js, Next.js, TypeScript & REST APIs</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Scikit-Learn (Random Forest, K-Means++, ROC-AUC)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> NLP & Text Mining (TF-IDF, Porter Stemming, Naive Bayes)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Generative AI & RAG (LangChain, FAISS, Groq LLaMA-3)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Streamlit, Python APIs, React.js & Next.js Deployment</li>
               </ul>
             </div>
           </div>
